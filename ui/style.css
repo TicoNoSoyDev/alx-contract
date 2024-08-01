@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Jost-Medium;
+    src: url(/fonts/Jost-Medium.ttf);
+}
+
+@font-face {
+    font-family: Jost-Regular;
+    src: url(/fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost-Light;
+    src: url(/fonts/Jost-Light.ttf);
+}
+
+* {
+    font-family: Jost-Regular;
+    font-weight: 400;
+}
+
+body {
+    display: none;
+    justify-content: center;
+    align-items: flex-end; /* Alinea hacia abajo */
+    height: 100vh;
+    margin: 0;
+    /* background-color: #282828; */
+    color: white;
+    overflow: hidden;
+}
+
+.inactive {
+    bottom: -300px !important;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.interaction-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #444;
+    box-shadow: 0 0 .3vw rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+    width: 600px;
+    border-radius: 2px;
+    text-align: center;
+    bottom: 50px; /* Añade un pequeño margen desde el fondo de la pantalla */
+    transition: bottom 0.5s ease-in-out;
+}
+
+h2 {
+    margin-top: 0;
+    background-color: rgb(250, 249, 249);
+    box-shadow: inset 0 0 .3vw rgb(0, 0, 0);
+    color: black;
+    border-radius: 2px;
+    padding: 10px 0;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(250, 249, 249);
+    box-shadow: inset 0 0 .3vw rgb(0, 0, 0);
+    color: black;
+    margin: 0 15px; /* Espacio entre los botones */
+    transition: .2s;
+}
+
+.accept:hover {
+    background-color: rgb(195, 195, 195);
+    /* box-shadow: inset 0 0 .3vw #28a745; */
+}
+
+.decline:hover {
+    background-color: rgb(195, 195, 195);
+    /* box-shadow: inset 0 0 .3vw #dc3545; */
+} 

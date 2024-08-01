@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Interacción</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="interaction-box" class="interaction-box inactive">
+            <h2>Contract of beating</h2>
+            <p>I need your help with one thing... go and beat the shit out of those bastards and bring me the little head, and I'll give you something to make it up to you.</p>
+            <div class="buttons">
+                <button @click="aceptar" class="accept">Accept</button>
+                <button @click="cancelar" class="decline">Decline</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
